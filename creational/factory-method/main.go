@@ -15,76 +15,7 @@ import "fmt"
 // We have a gunFactory struct which creates the gun of type ak47 or maverick.
 // The main.go acts as a client and instead of directly interacting with ak47 or maverick, it relies on gunFactory to create instances of ak47 and maverick
 
-// iGun.go
-// type iGun interface {
-// 	setName(name string)
-// 	getName() string
-// 	setPower(power int)
-// 	getPower() int
-// }
-
-// gun.go
-// type gun struct {
-// 	name  string
-// 	power int
-// }
-
-// func (g *gun) SetName(name string) {
-// 	g.name = name
-// }
-
-// func (g *gun) GetName() string {
-// 	return g.name
-// }
-
-// func (g *gun) SetPower(power int) {
-// 	g.power = power
-// }
-
-// func (g *gun) GetPower() int {
-// 	return g.power
-// }
-
-// ak47.go
-// type ak47 struct {
-// 	gun
-// }
-
-// func newAk47() IGun {
-// 	return &ak47{
-// 		gun: gun{
-// 			name:  "AK47 Terminus",
-// 			power: 4,
-// 		},
-// 	}
-// }
-
-// maverick.go
-// type maverick struct {
-// 	gun
-// }
-
-// func newMaverick() IGun {
-// 	return &maverick{
-// 		gun: gun{
-// 			name:  "Maverick Terminator 007",
-// 			power: 5,
-// 		},
-// 	}
-// }
-
-// gunFactory.go
-// func getGun(gunType string) (iGun, error) {
-// 	if gunType == "ak47" {
-// 		return newAk47(), nil
-// 	}
-
-// 	if gunType == "maverick" {
-// 		return newMaverick(), nil
-// 	}
-
-// 	return nil, fmt.Errorf("wrong gun type passed")
-// }
+// Client code
 
 func main() {
 	ak47, _ := GetGun("ak47")

@@ -1,5 +1,7 @@
 package main
 
+// Concrete Product
+
 type Maverick struct {
 	Gun
 }

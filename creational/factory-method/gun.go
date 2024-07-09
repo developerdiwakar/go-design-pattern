@@ -1,5 +1,7 @@
 package main
 
+//  Concrete product
+
 type Gun struct {
 	Name  string
 	Power int
