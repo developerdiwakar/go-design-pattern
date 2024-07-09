@@ -15,10 +15,10 @@ Creational design patterns provide various object creation mechanisms, which inc
     - **Benefits:** Promotes loose coupling, allows for subclass control over object creation, hides concrete implementation.
     - **Drawbacks:** Introduces an extra layer of abstraction, might require subclass proliferation.
  - **Abstract Factory**
-    - **Concept:**
-    - **Use Case:**
-    - **Benefits:**
-    - **Drawbacks:**
+    - **Concept:** Create families of related objects without specifying their concrete classes.
+    - **Use Case:** When you need to create sets of related objects that belong to different families.
+    - **Benefits:** Promotes loose coupling, simplifies client code, enforces consistent family creation.
+    - **Drawbacks:** More complex than Factory Method, can lead to a large number of concrete factory classes. 
  - **Builder**
     - **Concept:**
     - **Use Case:**
