@@ -1,5 +1,7 @@
 package main
 
+// Abstract product
+
 type iShort interface {
 	setLogo(logo string)
 	getLogo() string
@@ -26,14 +28,4 @@ func (s *short) setSize(size int) {
 
 func (s *short) getSize() int {
 	return s.size
-}
-
-// adidasShort
-type adidasShort struct {
-	short
-}
-
-// nikeShort
-type nikeShort struct {
-	short
 }

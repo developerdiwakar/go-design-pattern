@@ -1,5 +1,7 @@
 package main
 
+// Concrete factory
+
 type nike struct{}
 
 func (n *nike) makeShoe() iShoe {

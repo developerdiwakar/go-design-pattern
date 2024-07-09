@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Abstract factory interface
+
 type iSportsFactory interface {
 	makeShoe() iShoe
 	makeShort() iShort
